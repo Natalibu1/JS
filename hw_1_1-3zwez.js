@@ -1,3 +1,4 @@
+// Задание 1*:
 // 26. Создать переменную “age_1” и присвоить ей значение 10
 // 27. Создать переменную “age_2” и присвоить ей значение 18
 // 28. Создать переменную “age_3” и присвоить ей значение 60
@@ -24,8 +25,9 @@ const checkAge = function(age) {
     checkAge(17)
     checkAge(18)
     checkAge(61)
-   
-    const checkAge1 = function(age) {                    // 2*:  Преобразовать задание 1* таким образом, чтобы первым делом в функции проверялся тип данных. И если он не Number - кидалась ошибка.
+
+// 2*:  Преобразовать задание 1* таким образом, чтобы первым делом в функции проверялся тип данных. И если он не Number - кидалась ошибка.
+    const checkAge1 = function(age) {                    
     if (typeof(age) == 'number') {
      if (age < age_2) {        
     console.log('You don`t have access cause your age is ' + age + ' It`s less then')
@@ -45,8 +47,8 @@ const checkAge = function(age) {
     checkAge1('KFIRO')
     checkAge1(61)
    
-   
-     const checkAge2 = function(age) {          //3**: Преобразовать 2* таким образом, чтобы значение '2' (строка в которой лежит ТОЛЬКО ЦИФРА) пропускалось, преобразовываясь в number
+//3**: Преобразовать 2* таким образом, чтобы значение '2' (строка в которой лежит ТОЛЬКО ЦИФРА) пропускалось, преобразовываясь в number 
+     const checkAge2 = function(age) {          
      age = Number(age) 
      if (!isNaN(age)) {
     
