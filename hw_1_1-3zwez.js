@@ -27,7 +27,7 @@ const checkAge = function(age) {
     checkAge(61)
 
 // 2*:  Преобразовать задание 1* таким образом, чтобы первым делом в функции проверялся тип данных. И если он не Number - кидалась ошибка.
-    const checkAge1 = function(age) {                    
+const checkAge1 = function(age) {                    
     if (typeof(age) == 'number') {
      if (age < age_2) {        
     console.log('You don`t have access cause your age is ' + age + ' It`s less then')
@@ -48,9 +48,9 @@ const checkAge = function(age) {
     checkAge1(61)
    
 //3**: Преобразовать 2* таким образом, чтобы значение '2' (строка в которой лежит ТОЛЬКО ЦИФРА) пропускалось, преобразовываясь в number 
-     const checkAge2 = function(age) {          
-     age = Number(age) 
-     if (!isNaN(age)) {
+const checkAge2 = function(age) {          
+    age = Number(age) 
+    if (!isNaN(age)) {
     
        if (age < age_2) {        
      console.log('You don’t have access cause your age is ' + age + ' It’s less then')
@@ -63,10 +63,10 @@ const checkAge = function(age) {
         } 
        else {console.log('Technical work')
        } 
-     }  
-     else {console.log('ERROR!')
-     }
-     }
+    }  
+    else {console.log('ERROR!')
+    }
+}
    
      checkAge2(17) 
      checkAge2('65')
